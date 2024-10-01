@@ -24,25 +24,20 @@ function setup(){
     fill("#964B00");
     rect(235, 460, 100, 55);
 
-    // text("Click mouse to add lights then press a key on keyboard!", 20, 20);
-
     
   
  
 }
 
 function draw(){
-    
-    
-    
+    // used to determine x,y coordinates for the shapes
     // fill("red");
     // circle(mouseX,mouseY, 20);
-    //print(mouseX, mouseY);
+    // print(mouseX, mouseY);
     
 }
 
 function mouseClicked(){
-        fill("lightblue");
         x++;
         print(x);
 
@@ -50,6 +45,8 @@ function mouseClicked(){
         circleX = random (237, 330);
         circleY = random (239, 440);
       
+        stroke(color(255, 255, 255, 100)); //glow effect
+        strokeWeight(3);
         fill("red");
         circle(circleX, circleY, 25);
 
@@ -71,6 +68,7 @@ function mouseClicked(){
 }
 
 function keyPressed(){
+    noStroke();
     fill("lightblue");
     rect(0, 0, 500, 30);
     text("Click mouse to add lights then press a key on keyboard!", 20, 20);
@@ -78,6 +76,8 @@ function keyPressed(){
     fill("red");
     text('Merry Christmas!', 100, 100);
 
+    stroke(color(255, 255, 255, 100)); //glow effect
+    strokeWeight(5);
     fill("yellow");
     beginShape();
         vertex(290, 120); //top point
