@@ -1,7 +1,3 @@
-/* The project should have some form of interaction from the user. This can be a mouse click, mouse position or button press.
-A decision should be made by using if/else statement. */
-
-
 let x = 1;
 let circleX = 0;
 let circleY = 0;
